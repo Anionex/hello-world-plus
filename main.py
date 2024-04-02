@@ -65,12 +65,12 @@ def type_out_text(screen, text, font, color, shadow_color, time_per_character, f
 def main():
     # 设置屏幕大小
     screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
-    pygame.display.set_caption('Type Out Text Animation')
+    pygame.display.set_caption('Type Out Text Animation');
 
     # 设置字体和颜色
-    font = pygame.font.Font(None, 256)  # 增大字体大小
+    font = pygame.font.SysFont("Aqum", 256)  # 增大字体大小
     color = "#0078B9"  # 蓝色
-    shadow_color = "#006EB1"
+    shadow_color = "#000000"
     # 调用函数，开始动画
     type_out_text(screen, "Hello, World!", font, color, shadow_color, 256, 2)  # 100毫秒每个字符，结束后暂停2秒
 
